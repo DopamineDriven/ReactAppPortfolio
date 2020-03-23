@@ -19,10 +19,11 @@ const Home = () => {
         </div>
         <div className="col-md-5 justify-content center shadow-lg p-3 mb-5 rounded">
           <div className="card-body">
-            <p className="card-text font-weight-bold" id="bio"><h2 className="texty">About</h2>
+          <h2 className="texty">About</h2>
+            <p className="card-text font-weight-bold" id="bio">
                 My name is Andrew Ross, and I'm Software Developer based in the Chicago area.
                 I earned bachelor’s degrees from the University of Iowa in Biochemistry and Anthropology and most recently obtained a certificate in Full Stack Development from Northwestern University.
-                I primarily focus on back-end development, but have become increasingly fond of React development lately as well.
+                I primarily focus on back-end development, but have become increasingly fond of React development as of recent.
             </p>
           </div>
         </div>

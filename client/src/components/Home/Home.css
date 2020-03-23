@@ -1,3 +1,10 @@
+Body {
+    text-align: center;
+    position: relative;
+    align-content: center;
+
+}
+
 #imdiv {
     position: inherit;
     align-content: center;
@@ -50,7 +57,18 @@
     padding: 1em;
 }
 
+.social-links {
+    color: #F0F2F0;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+}
+
 .social-links i {
     color: #F0F2F0;
     justify-content: space-between;
+}
+
+.social-links i :hover{
+    color: #000C40;
 }
