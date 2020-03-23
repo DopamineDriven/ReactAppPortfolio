@@ -2,7 +2,6 @@
 // // import {primaryImg, secondaryImg } from '../pages/imageChangeOnMouseOver'
 
 // const ImageToggleOnScroll = ({ primaryImg, secondaryImg }) => {
-    
 //     const imageRef = useRef(null);
 //     // not show image until useEffect is called, then show it 
 //     const [isLoading, setIsLoading] = useState(true);
@@ -63,3 +62,8 @@
 // }
 
 // export default ImageToggleOnScroll;
+
+// // useEffect Second Param, dependency array:
+//     // if Null, then useEffect run on every incovation of component
+//     // if empty array [], then useEffect run only on first invocation of component
+//     // if values, useEffect runs only when any of array values change

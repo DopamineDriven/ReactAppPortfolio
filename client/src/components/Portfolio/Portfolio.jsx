@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import portfolioPicOne from '../../images/14.jpg';
 import portfolioPicTwo from '../../images/13.jpg';
 import portfolioPicThree from '../../images/11.jpg';
@@ -8,11 +8,13 @@ import portfolioPicSix from '../../images/8.jpg';
 import portfolioPicSeven from '../../images/4.jpg';
 import portfolioPicEight from '../../images/3.jpg';
 import portfolioPicNine from '../../images/2.jpg';
+import PortfolioItem from './PortfolioItem.jsx';
+import Container from '../Container/Container.jsx';
 // import WrapperPortfolio from './WrapperPortfolio';
 // import PortfolioTitle from './PortfolioTitle.jsx';
 // import PortfolioCard from './PortfolioCard.jsx'
 
-const portfolioData = [
+const data = [
 {
     id: 14,
     title: "PWA Budget Tracker",
@@ -20,6 +22,7 @@ const portfolioData = [
     independent: false,
     favorite: true,
     image: portfolioPicOne,
+    url: 'https://budget-trackr.herokuapp.com/',
     overview:
     "PWA, Mongo, Mongoose, Node, Express, Charts"
 },
@@ -30,6 +33,7 @@ const portfolioData = [
     independent: false,
     favorite: true,
     image: portfolioPicTwo,
+    url: 'https://vast-inlet-61488.herokuapp.com/',
     overview:
         "React, React Hooks, axios, createContext"
     },
@@ -40,6 +44,7 @@ const portfolioData = [
     independent: false,
     favorite: true,
     image: portfolioPicThree,
+    url: 'https://exercise-trackr.herokuapp.com/',
     overview:
         "Mongo, Mongoose, Express, Node"
     },
@@ -50,6 +55,7 @@ const portfolioData = [
     independent: true,
     favorite: true,
     image: portfolioPicFour,
+    url: 'https://rec-reate.herokuapp.com/',
     overview:
         "Project Two; MySQL, Sequelize, Handlebars, Express, Node, Passport, Bcrypt"
     },
@@ -60,6 +66,7 @@ const portfolioData = [
     independent: false,
     favorite: false,
     image: portfolioPicFive,
+    url: 'https://dopaminedriven.github.io/WeatherDashboard/',
     overview:
         "API, AJAX, JavaScript, jQuery"
     },
@@ -70,6 +77,7 @@ const portfolioData = [
     independent: false,
     favorite: false,
     image: portfolioPicSix,
+    url: 'https://infinite-stream-25057.herokuapp.com/',
     overview:
         "MySQL, Custom ORM, Handlebars, Node, Express, jQuery"
     },
@@ -80,6 +88,7 @@ const portfolioData = [
     independent: false,
     favorite: false,
     image: portfolioPicSeven,
+    url: 'https://express-note-taking-app.herokuapp.com/',
     overview:
         "Express, node, local storage, jQuery"
     },
@@ -90,8 +99,9 @@ const portfolioData = [
     independent: false,
     favorite: false,
     image: portfolioPicEight,
+    url: 'https://www.youtube.com/watch?v=1aqZo6awj38',
     overview:
-        "Node CLI, Jest, jQuery, Constructors"
+        "Node CLI, Jest, MySQL, Inquirer"
     },
     {
     id: 2,
@@ -100,20 +110,25 @@ const portfolioData = [
     independent: false,
     favorite: false,
     image: portfolioPicNine,
+    url: 'https://www.youtube.com/watch?v=T1ln-xt-Dm4',
     overview:
         "Node CLI, Axios, Electron"
     }
 ];
 
-class Portfolio extends Component {
-    state = {
-        portfolioData
-    }
-
-
-    render() {
+const Portfolio = () => {
         return (
-        <div>{console.log(portfolioData)}</div>
+            <React.Fragment>
+                <Container>
+                    <div className="row m-auto p-auto">
+                        {data.map((project, index) => {
+                            return (
+                                <PortfolioItem image={project.image} url={project.ur} title={project.title} overview={project.overview}/>
+                            )
+                        })}
+                    </div>
+                </Container>
+            </React.Fragment>
             // <WrapperPortfolio>
             //     <PortfolioTitle>Project</PortfolioTitle>
             //     {this.state.portfolioData.map(data => {
@@ -128,7 +143,7 @@ class Portfolio extends Component {
             // </WrapperPortfolio>
         )
     }
-}
+
 
 export default Portfolio;
 

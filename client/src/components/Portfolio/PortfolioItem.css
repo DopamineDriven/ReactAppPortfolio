@@ -1,0 +1,24 @@
+.portcard {
+    border: 1px solid white; 
+    /* overflow: auto !important; */
+    margin-right: 1rem !important;
+  }
+
+  .portImg {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50% !important;
+    overflow: auto;
+  }
+
+  .projecttext {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .portcard hr{
+    border-top: 2.5px dotted #F0F2F0;
+    width: 50%;
+    margin: auto;
+}
