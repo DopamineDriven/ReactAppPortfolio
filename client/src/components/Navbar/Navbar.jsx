@@ -4,9 +4,9 @@ import { Content, Layout, Header, Navigation } from 'react-mdl'
 
 const Navbar = () => {
   return (
-    <div style={{height: '100px', position: 'relative'}}>
+    <div className="header" style={{height: '75px', position: 'relative'}}>
       <Layout fixedHeader>
-          <Header className="bg-dark" >
+          <Header transparent >
             <Navigation className="Navbar">
                   <a href="/">Home</a>
                   <a href="/contact">Contact</a>
