@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Home from './components/Home/Home.jsx';
 import Contact from './components/Contact/Contact.jsx';
-import Portfolio from './components/Portfolio/Portfolio.jsx';
+import Portfolio from './components/Portfolio/PortfolioDetail.jsx';
 import Footer from './components/Footer/Footer.jsx'
 
 const App = () => {

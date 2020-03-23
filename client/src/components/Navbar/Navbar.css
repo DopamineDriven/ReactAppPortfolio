@@ -1,0 +1,12 @@
+#menu ul{
+    list-style: none;
+  }
+  #menu li{
+    display: inline;
+  }
+
+.Navbar {
+    color: #F0F2F0;
+    float: right;
+}
+

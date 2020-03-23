@@ -1,13 +1,30 @@
 import React from 'react';
-// import ImageChangeOnScroll from './imageEffects/ImageChangeOnScroll.jsx'; 
-const Portfolio = () => {
+// import PortfolioDetail from './PortfolioDetail.jsx'
+// import portfolioData from './PortfolioData.jsx'
+// import Container from '../Container/Container.jsx';
 
+const Portfolio = () => {
     return (
-        <div>
-            {/* <ImageChangeOnScroll /> */}
-            Portfolio
-        </div>
+        <div></div>
     )
 }
 
 export default Portfolio;
+
+
+{/* <Container fluid>
+<div className="row">
+    <div className="card-deck">
+    {portfolioData.map(({ id, title, overview }) => {
+        return (
+        <PortfolioDetail
+            key={id}
+            id={id}
+            title={title}
+            overview={overview}
+        />
+        );
+    })}
+    </div>
+</div>
+</Container> */}
