@@ -1,0 +1,47 @@
+#imdiv {
+    position: inherit;
+    align-content: center;
+}
+#bio {
+    text-align: justify;
+    color: #F0F2F0
+}
+
+.texty {
+    color: #F0F2F0;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+#contents {
+    align-items: center;
+    float: right;
+}
+#image {
+    float: right;
+}
+
+.banner-text {
+    margin: auto;
+    color: #F0F2F0;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.banner-text h3{
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.banner-text hr{
+    border-top: 2.5px dotted #F0F2F0;
+    width: 50%;
+    margin: auto;
+}
+
+.banner-text p{
+    font-weight: bold;
+    padding: 1em;
+}
