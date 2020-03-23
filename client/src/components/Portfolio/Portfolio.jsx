@@ -8,8 +8,9 @@ import portfolioPicSix from '../../images/8.jpg';
 import portfolioPicSeven from '../../images/4.jpg';
 import portfolioPicEight from '../../images/3.jpg';
 import portfolioPicNine from '../../images/2.jpg';
-import Container from '../Container/Container.jsx';
-import WrapperPortfolio from './WrapperPortfolio'
+// import WrapperPortfolio from './WrapperPortfolio';
+// import PortfolioTitle from './PortfolioTitle.jsx';
+// import PortfolioCard from './PortfolioCard.jsx'
 
 const portfolioData = [
 {
@@ -112,9 +113,19 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <WrapperPortfolio>
-
-            </WrapperPortfolio>
+        <div>{console.log(portfolioData)}</div>
+            // <WrapperPortfolio>
+            //     <PortfolioTitle>Project</PortfolioTitle>
+            //     {this.state.portfolioData.map(data => {
+            //         <PortfolioCard  
+            //             key = {data.id}
+            //             id = {data.id}
+            //             title = {data.title}
+            //             overview = {data.overview}
+            //             image = {data.image}
+            //         />
+            //     })}
+            // </WrapperPortfolio>
         )
     }
 }
