@@ -7,6 +7,10 @@
     color: #F0F2F0
 }
 
+#row {
+    justify-content: space-between;
+}
+
 .texty {
     color: #F0F2F0;
     font-weight: bold;
@@ -44,4 +48,9 @@
 .banner-text p{
     font-weight: bold;
     padding: 1em;
+}
+
+.social-links i {
+    color: #F0F2F0;
+    justify-content: space-between;
 }

@@ -7,7 +7,7 @@ import Banner from './Banner.jsx'
 const Home = () => {
   return (
     <Container fluid>
-      <Row>
+      <Row className="row">
         <div
           className="col-md-3 justify-content center shadow-lg p-3 mb-5 rounded"
           id="imdiv"
@@ -18,7 +18,6 @@ const Home = () => {
           />
         </div>
         <div className="col-md-5 justify-content center shadow-lg p-3 mb-5 rounded">
-            
           <div className="card-body">
             <p className="card-text font-weight-bold" id="bio"><h2 className="texty">About</h2>
                 My name is Andrew Ross, and I'm Software Developer based in the Chicago area.

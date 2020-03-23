@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from 'react-router-dom';
 import './Navbar.css';
 import Container from '../Container/Container.jsx'
 import AminoLogo from '../../images/misc/AminoLogo.jpg'
@@ -8,29 +7,32 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
         <Container fluid>
-            <Link href="../Home/Home.jsx" className="navbar-brand">
+            <a href="../Home/Home.jsx" className="navbar-brands">
                 <img src={AminoLogo} alt="amino" className="img-fluid" height="99.66px" width="225px"/>
-            </Link>
+            </a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span className="navbar-toggler-icon"></span>
+            </button>
             <div className="collapse navbar-collapse">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <Link href="/" className="navbar-brand">
+                        <a href="/" className="navbar-brand">
                             About
-                        </Link>
+                        </a>
                     </li>
                 </ul>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <Link href="/contact" className="navbar-brand">
+                        <a href="/contact" className="navbar-brand">
                             Contact
-                        </Link>
+                        </a>
                     </li>
                 </ul>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <Link href="/portfolio" className="navbar-brand">
+                        <a href="/portfolio" className="navbar-brand">
                             Portfolio
-                        </Link>
+                        </a>
                     </li>
                 </ul>
             </div>

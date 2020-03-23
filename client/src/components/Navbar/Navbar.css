@@ -1,8 +1,8 @@
 #menu ul{
     list-style: none;
   }
-  #menu li{
-    display: inline;
+.nav-item{
+    display: inline-block;
   }
 
 .Navbar {
