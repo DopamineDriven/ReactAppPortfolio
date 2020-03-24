@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
         <div className="container-fluid">
-            <a href="../Home/Home.jsx" className="navbar-brands">
+            <a href="/" className="navbar-brands">
                 <img src={AminoLogo} alt="amino" className="img-fluid" height="99.66px" width="225px"/>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
