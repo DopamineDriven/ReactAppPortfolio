@@ -2,3 +2,10 @@
     color: white;
     display: inline-block;
 }
+
+Body {
+    text-align: center;
+    position: relative;
+    align-content: center;
+
+}

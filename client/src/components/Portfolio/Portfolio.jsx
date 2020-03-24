@@ -121,9 +121,9 @@ const Portfolio = () => {
             <React.Fragment>
                 <Container>
                     <div className="row m-auto p-auto">
-                        {data.map((project, index) => {
+                        {data.map((project) => {
                             return (
-                                <PortfolioItem image={project.image} url={project.ur} title={project.title} overview={project.overview}/>
+                                <PortfolioItem key={project.id} image={project.image} url={project.url} title={project.title} overview={project.overview}/>
                             )
                         })}
                     </div>
