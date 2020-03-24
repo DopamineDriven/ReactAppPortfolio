@@ -1,7 +1,7 @@
 import React from "react";
 import './Navbar.css';
 // import Container from '../Container/Container.jsx'
-import AminoLogo from '../../images/misc/AminoLogo.jpg'
+import AminoLogo from '../images/misc/AminoLogo.jpg'
 
 const Navbar = () => {
   return (

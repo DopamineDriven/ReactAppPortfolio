@@ -45,5 +45,10 @@
   "devDependencies": {
     "react-hooks": "^1.0.1",
     "react-performance": "0.0.5"
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "DopamineDriven/create-react-app"
+    }
+  ]
 }
