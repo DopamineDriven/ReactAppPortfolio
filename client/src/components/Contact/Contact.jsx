@@ -35,7 +35,7 @@ class Contact extends Component {
             message
         })
         e.preventDefault()
-
+// f
     }
 
     // render
