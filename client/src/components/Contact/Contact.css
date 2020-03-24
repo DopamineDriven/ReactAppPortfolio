@@ -4,8 +4,9 @@
 }
 
 Body {
-    text-align: center;
+    text-align: justify;
     position: relative;
-    align-content: center;
-
+}
+.formy {
+    position: relative;
 }

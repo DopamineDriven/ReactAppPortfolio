@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, FormGroup, Input, Label, Button } from 'reactstrap';
+import axios from 'axios';
 
 class Contact extends Component {
     constructor () {
@@ -10,12 +11,39 @@ class Contact extends Component {
             email: "",
             message: ""
         }
+        // data binding 
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+    }
+    // methods
+    handleChange = e => {
+        this.setState(
+            { [e.target.name]: e.target.value }
+        )
     }
 
+    async handleSubmit (e) {
+        this.setState({
+            [e.preventDefault()]: e.target.value
+        })
+
+        const { name, email, message } = this.state
+
+        const form = await axios.post('/api/form', {
+            name,
+            email,
+            message
+        })
+        e.preventDefault()
+
+    }
+
+    // render
     render() {
     return (
-        <div className="justify-content center shadow-lg p-3 mb-5 rounded">
-        <Form style={{width: '75%'}} className="justify-content center shadow-lg p-3 mb-5 rounded">
+        <div className="justify-content shadow-lg p-3 mb-5 rounded mt-5">
+            <h2 className="text-left text-white">&nbsp;&nbsp;Contact</h2>
+        <Form style={{width: '75%'}} onSubmit={this.handleSubmit} className="formy justify-content center shadow-lg p-3 mb-5 rounded">
             <FormGroup>
                 <Label for="name"></Label>
                 <Input
