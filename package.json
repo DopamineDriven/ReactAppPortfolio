@@ -1,0 +1,26 @@
+{
+  "name": "ReactAppPortfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DopamineDriven/ReactAppPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DopamineDriven/ReactAppPortfolio/issues"
+  },
+  "homepage": "https://github.com/DopamineDriven/ReactAppPortfolio#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "nodemailer": "^6.4.6"
+  }
+}
