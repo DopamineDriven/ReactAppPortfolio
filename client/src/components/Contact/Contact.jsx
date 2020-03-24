@@ -63,7 +63,7 @@ class Contact extends Component {
                     onChange={this.handleChange} 
                 />
             </FormGroup>
-            <FormGroup>
+            <FormGroup >
                 <Label for="message"></Label>
                 <Input
                     placeholder="message"
@@ -73,7 +73,7 @@ class Contact extends Component {
                 />
             </FormGroup>
 
-            <Button>
+            <Button >
                 Submit
             </Button>
 
