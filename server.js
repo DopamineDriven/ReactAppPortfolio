@@ -1,11 +1,7 @@
 const express = require('express');
 require('dotenv').config();
-
-// defining port
-const PORT = process.env.PORT || 3001;
-
-// setting up express
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 // handling data parsing
 app.use(express.urlencoded({ extended: true }));
