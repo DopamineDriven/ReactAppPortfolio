@@ -22,7 +22,7 @@ const Home = () => {
           <h2 className="texty">About</h2>
           <br />
             <p className="card-text font-weight-bold" id="bio">
-                My name is Andrew Ross, and I'm Software Developer based in the Chicago area.
+                My name is Andrew Ross, and I'm a Software Developer based in the Chicago area.
                 I earned bachelor’s degrees from the University of Iowa in Biochemistry and Anthropology and most recently obtained a certificate in Full Stack Development from Northwestern University.
                 I primarily focus on back-end development, but have become increasingly fond of and proficient in React development as of recent.
             </p>

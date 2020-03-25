@@ -10,6 +10,7 @@ import portfolioPicEight from '../images/3.jpg';
 import portfolioPicNine from '../images/2.jpg';
 import PortfolioItem from './PortfolioItem.jsx';
 import Container from '../Container/Container.jsx';
+import './Portfolio.css';
 // import WrapperPortfolio from './WrapperPortfolio';
 // import PortfolioTitle from './PortfolioTitle.jsx';
 // import PortfolioCard from './PortfolioCard.jsx'
@@ -24,7 +25,7 @@ const data = [
     image: portfolioPicOne,
     url: 'https://budget-trackr.herokuapp.com/',
     overview:
-    "PWA, Mongo, Mongoose, Node, Express, Charts"
+    "PWA, Mongo, Node, Express"
 },
 {
     id: 13,
@@ -35,7 +36,7 @@ const data = [
     image: portfolioPicTwo,
     url: 'https://vast-inlet-61488.herokuapp.com/',
     overview:
-        "React, React Hooks, axios, createContext"
+        "React, React Hooks, axios"
     },
     {
     id: 11,

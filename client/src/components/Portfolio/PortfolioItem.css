@@ -1,3 +1,6 @@
+.Body {
+    margin-top: 5px;
+}
 .portcard {
     border: 1px solid white; 
     /* overflow: auto !important; */
@@ -8,8 +11,8 @@
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 50% !important;
-    overflow: auto;
+    width: 95% !important;
+    overflow: auto !important;
   }
 
   .projecttext {
