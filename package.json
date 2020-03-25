@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/DopamineDriven/ReactAppPortfolio#readme",
   "devDependencies": {
+    "concurrently": "^5.1.0",
     "nodemon": "^2.0.2"
   },
   "dependencies": {
