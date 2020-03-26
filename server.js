@@ -15,6 +15,10 @@ if (process.env.NODE_ENV === 'production') {
 // importing nodemail routes
 require('./nodemailer.js')(app);
 
+app.post('/api/form', (request, response) => {
+    console.log(request.body)
+});
+
 // sending errors for posts that are not nodemailer related
 app.delete('*', (request, response) => {
     response
