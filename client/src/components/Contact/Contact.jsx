@@ -23,8 +23,9 @@ class Contact extends Component {
     }
 
     async handleSubmit (e) {
+        e.preventDefault();
         this.setState({
-            [e.preventDefault()]: e.target.value
+            [e.target.name]: e.target.value
         })
 
         const { name, email, message } = this.state
@@ -34,8 +35,7 @@ class Contact extends Component {
             email,
             message
         })
-        e.preventDefault()
-// f
+        console.log(form)
     }
 
     // render
@@ -73,7 +73,9 @@ class Contact extends Component {
                 />
             </FormGroup>
 
-            <Button >
+            <Button 
+            onChange={this.handleSubmit}
+            >
                 Submit
             </Button>
 

@@ -2,16 +2,20 @@
   "name": "react-app-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DopamineDriven/ReactAppPortfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrew Ross",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DopamineDriven/ReactAppPortfolio/issues"
