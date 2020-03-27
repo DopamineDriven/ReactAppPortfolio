@@ -44,7 +44,7 @@ const Navbar = () => {
                     &nbsp;|&nbsp;
                     <li className="nav-item">
                         <Link
-                            to="/search" 
+                            to="/contact" 
                             className={
                                 window.location.pathname === "/contact"
                                     ? "nav-link active"
@@ -56,7 +56,7 @@ const Navbar = () => {
                     &nbsp;|&nbsp;
                     <li className="nav-item">
                         <Link
-                            to="/saved" 
+                            to="/portfolio" 
                             className={
                                 window.location.pathname === "/portfolio"
                                 ? "nav-link active"
