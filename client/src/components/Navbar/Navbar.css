@@ -3,6 +3,8 @@
   }
 .nav-item{
     display: inline-block;
+    color: #F0F2F0;
+    font-size: large;
   }
 
 .Navbar {
@@ -10,7 +12,29 @@
     float: right;
 }
 
-/* .header {
-    border-bottom: 1px solid #F0F2F0;
-    margin-bottom: 5px;
-} */
+.nav-item{
+  display: inline-block;
+  color: #F0F2F0;
+  font-size: larger;
+}
+
+.nav-item:active{
+  display: inline-block;
+  color: #F0F2F0;
+  font-size: larger;
+  border-bottom: solid white 1px;
+}
+
+.navbar-dark {
+  letter-spacing: 0.1em;
+}
+
+.navbar-item {
+  float: right;
+}
+
+.navbar-nav {
+  color: #F0F2F0;
+  display: inline-block;
+  font-size: larger;
+}

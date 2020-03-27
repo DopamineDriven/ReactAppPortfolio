@@ -1,57 +1,75 @@
 import React from "react";
 import './Navbar.css';
 // import Container from '../Container/Container.jsx'
-import AminoLogo from '../images/misc/AminoLogo.jpg'
+import AminoLogo from '../images/misc/AminoLogo.jpg';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+    // use state expanded and setExpanded onClick
+    // circle back
   return (
-    <nav className="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
-        <div className="container-fluid">
-            <a href="/" className="navbar-brands">
+      <React.Fragment>
+        <nav className="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+            <Link
+                to="/" 
+                className="navbar-brand">
                 <img src={AminoLogo} alt="amino" className="img-fluid" height="99.66px" width="225px"/>
-            </a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span className="navbar-toggler-icon"></span>
+            </Link>
+            
+            <button
+                className="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+            <span className="navbar-toggler-icon" />
             </button>
-            <div className="collapse navbar-collapse" id="navbarResponsive">
-                <ul className="navbar-nav ml-auto">
+        <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a href="/" className="navbar-brand">
+                        <Link 
+                            to="/" 
+                            className={
+                                window.location.pathname === "/" || window.location.pathname === "/home"
+                                ? "nav-link active"
+                                : "nav-link"
+                            }>
                             About
-                        </a>
+                        </Link>
                     </li>
-                </ul>
-                <ul className="navbar-nav ml-auto">
+                    &nbsp;|&nbsp;
                     <li className="nav-item">
-                        <a href="/contact" className="navbar-brand">
+                        <Link
+                            to="/search" 
+                            className={
+                                window.location.pathname === "/contact"
+                                    ? "nav-link active"
+                                    : "nav-link" 
+                            }>
                             Contact
-                        </a>
+                        </Link>
                     </li>
-                </ul>
-                <ul className="navbar-nav ml-auto">
+                    &nbsp;|&nbsp;
                     <li className="nav-item">
-                        <a href="/portfolio" className="navbar-brand">
+                        <Link
+                            to="/saved" 
+                            className={
+                                window.location.pathname === "/portfolio"
+                                ? "nav-link active"
+                                : "nav-link"
+                            }>
                             Portfolio
-                        </a>
+                        </Link>
                     </li>
                 </ul>
-            </div>
-            </div>
+           </div>
     </nav>
+    </React.Fragment>
   )
 }
 
 export default Navbar;
-
-/* <div className="header" style={{height: '75px', position: 'relative'}}>
-<Layout fluid>
-    <Header transparent >
-      <Navigation className="Navbar">
-            <a href="/">Home</a>
-            <a href="/contact">Contact</a>
-            <a href="/portfolio">Portfolio</a>
-      </Navigation>
-    </Header>
-    <Content />
-</Layout>
-</div> */
