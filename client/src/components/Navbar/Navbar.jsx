@@ -56,13 +56,13 @@ const Navbar = () => {
                     &nbsp;|&nbsp;
                     <li className="nav-item">
                         <Link
-                            to="/saved" 
+                            to="/portfolio" 
                             className={
-                                window.location.pathname === "/saved"
+                                window.location.pathname === "/portfolio"
                                 ? "nav-link active"
                                 : "nav-link"
                             }>
-                            Saved
+                            Portfolio
                         </Link>
                     </li>
                 </ul>
