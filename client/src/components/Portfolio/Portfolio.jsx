@@ -8,6 +8,7 @@ import portfolioPicSix from '../images/8.jpg';
 import portfolioPicSeven from '../images/4.jpg';
 import portfolioPicEight from '../images/3.jpg';
 import portfolioPicNine from '../images/2.jpg';
+import portfolioPicTen from '../images/15.jpg'
 import PortfolioItem from './PortfolioItem.jsx';
 import Container from '../Container/Container.jsx';
 import './Portfolio.css';
@@ -114,6 +115,16 @@ const data = [
     url: 'https://www.youtube.com/watch?v=T1ln-xt-Dm4',
     overview:
         "Node CLI, Axios, Electron"
+    },
+    {
+    id: 15,
+    title: "Resume",
+    bootcamp: false,
+    independent: true,
+    favorite: false,
+    image: portfolioPicTen,
+    url: "https://docs.google.com/document/d/1hnT5DnJnkSmGOvhXNyA2hZdSdY8tODg8qA8xsjPy0vc/edit?usp=sharing",
+    overveiw: "Overview"
     }
 ];
 
