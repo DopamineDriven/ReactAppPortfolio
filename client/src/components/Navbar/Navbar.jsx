@@ -14,10 +14,10 @@ const Navbar = () => {
             <Link
                 to="/" 
                 className="navbar-brand">
-                <img src={AminoLogo} alt="amino" className="img-fluid" height="99.66px" width="225px"/>
+                <img src={AminoLogo} alt="react" className="img-fluid" height="99.66px" width="225px"/>
             </Link>
             
-            <button
+            {/* <button
                 className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -27,8 +27,8 @@ const Navbar = () => {
                 aria-label="Toggle navigation"
             >
             <span className="navbar-toggler-icon" />
-            </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+            </button> */}
+        {/* <div className="collapse navbar-collapse" id="navbarNav"> */}
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <Link 
@@ -56,20 +56,33 @@ const Navbar = () => {
                     &nbsp;|&nbsp;
                     <li className="nav-item">
                         <Link
-                            to="/portfolio" 
+                            to="/saved" 
                             className={
-                                window.location.pathname === "/portfolio"
+                                window.location.pathname === "/saved"
                                 ? "nav-link active"
                                 : "nav-link"
                             }>
-                            Portfolio
+                            Saved
                         </Link>
                     </li>
                 </ul>
-           </div>
+           {/* </div> */}
     </nav>
     </React.Fragment>
   )
 }
 
 export default Navbar;
+
+/* <div className="header" style={{height: '75px', position: 'relative'}}>
+<Layout fluid>
+    <Header transparent >
+      <Navigation className="Navbar">
+            <a href="/">Home</a>
+            <a href="/contact">Contact</a>
+            <a href="/portfolio">Portfolio</a>
+      </Navigation>
+    </Header>
+    <Content />
+</Layout>
+</div> */
