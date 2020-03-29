@@ -2,7 +2,7 @@
     margin-top: 5px;
 }
 .portcard {
-    border: 5px solid #343a40; 
+    border: 3px solid #343a40; 
     /* overflow: auto !important; */
     margin: 10px;
   }
@@ -13,7 +13,7 @@
     margin-right: auto !important;
     width: 95% !important;
     overflow: auto !important;
-    border: 3px solid white;
+    border: 3px solid #343a40;
   }
 
   .projecttext {
