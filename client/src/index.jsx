@@ -1,3 +1,6 @@
+import 'react-app-polyfill/stable'
+import 'react-app-polyfill/ie9'
+import 'react-app-polyfill/ie11'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
@@ -6,7 +9,12 @@ import * as serviceWorker from './serviceWorker';
 // import 'react-mdl/extra/material.css';
 // import 'react-mdl/extra/material.js';
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
