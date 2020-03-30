@@ -27,7 +27,7 @@ const data = [
         image: portfolioPicEleven,
         url: 'https://react-google-books-app.herokuapp.com/',
         overview:
-        "MERN, backwards compatible, axios, mongoose"
+        "MERN, backwards compatibility, axios"
     },
     {
         id: 14,
@@ -71,7 +71,7 @@ const data = [
         image: portfolioPicFour,
         url: 'https://rec-reate.herokuapp.com/',
         overview:
-            "Project Two; MySQL, Sequelize, Handlebars, Express, Node, Passport, Bcrypt"
+            "Sequelize, Express, Node, Passport, Handlebars"
         },
         {
         id: 10,
@@ -93,7 +93,7 @@ const data = [
         image: portfolioPicSix,
         url: 'https://infinite-stream-25057.herokuapp.com/',
         overview:
-            "MySQL, Custom ORM, Handlebars, Node, Express, jQuery"
+            "MySQL, Handlebars, Node, Express, jQuery"
         },
         {
         id: 4,
@@ -104,7 +104,7 @@ const data = [
         image: portfolioPicSeven,
         url: 'https://express-note-taking-app.herokuapp.com/',
         overview:
-            "Express, node, local storage, jQuery"
+            "Express, Node, local storage, jQuery"
         },
         {
         id: 3,

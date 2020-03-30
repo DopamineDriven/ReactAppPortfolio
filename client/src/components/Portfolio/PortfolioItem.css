@@ -2,9 +2,11 @@
     margin-top: 5px;
 }
 .portcard {
-    border: 3px solid #343a40; 
+    border: 1px solid white; 
     /* overflow: auto !important; */
     margin: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .portImg {
@@ -13,10 +15,16 @@
     margin-right: auto !important;
     width: 95% !important;
     overflow: auto !important;
-    border: 3px solid #343a40;
+    border: 2px solid #343a40;
   }
 
   .projecttext {
     text-align: center;
     font-size: 18px;
   }
+
+  .portcard hr{
+    border-top: 2.5px dotted #F0F2F0;
+    width: 50%;
+    margin: auto;
+}
