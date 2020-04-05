@@ -27,7 +27,7 @@ const data = [
         image: portfolioPicEleven,
         url: 'https://react-google-books-app.herokuapp.com/',
         overview:
-        "MERN, backwards compatibility, axios"
+        "MERN, backward compatibility, axios"
     },
     {
         id: 14,
