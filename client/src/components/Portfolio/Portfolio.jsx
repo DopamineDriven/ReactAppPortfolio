@@ -8,16 +8,27 @@ import portfolioPicSix from '../images/8.jpg';
 import portfolioPicSeven from '../images/4.jpg';
 import portfolioPicEight from '../images/3.jpg';
 import portfolioPicNine from '../images/2.jpg';
-import portfolioPicTen from '../images/15.jpg'
-import portfolioPicEleven from '../images/16.jpg'
+import portfolioPicTen from '../images/15.jpg';
+import portfolioPicEleven from '../images/16.jpg';
+import portfolioPicTwelve from '../images/17.jpg';
 import PortfolioItem from './PortfolioItem.jsx';
 import Container from '../Container/Container.jsx';
 import './Portfolio.css';
 // import WrapperPortfolio from './WrapperPortfolio';
 // import PortfolioTitle from './PortfolioTitle.jsx';
-// import PortfolioCard from './PortfolioCard.jsx'
+// import PortfolioCard from './PortfolioCard.jsx';
 
 const data = [
+    {
+        id: 17,
+        title: "Consilience",
+        bootcamp: true,
+        independent: true,
+        favorite: true,
+        image: portfolioPicTwelve,
+        url: 'https://classroom-consilience.herokuapp.com/',
+        overview: 'MERN, JWTs, backward compatibility'
+    },
     {
         id: 16,
         title: "Google Books Search & Save",
