@@ -158,7 +158,13 @@ const Portfolio = () => {
                     <div className="row m-auto p-auto">
                         {data.map((project) => {
                             return (
-                                <PortfolioItem key={project.id} image={project.image} url={project.url} title={project.title} overview={project.overview}/>
+                                <PortfolioItem 
+                                    key={project.id} 
+                                    image={project.image} 
+                                    url={project.url} 
+                                    title={project.title} 
+                                    overview={project.overview}
+                                />
                             )
                         })}
                     </div>
