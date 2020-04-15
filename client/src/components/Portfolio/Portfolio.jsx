@@ -146,7 +146,7 @@ const data = [
         independent: true,
         favorite: false,
         image: portfolioPicTen,
-        url: "https://docs.google.com/document/d/1hnT5DnJnkSmGOvhXNyA2hZdSdY8tODg8qA8xsjPy0vc/edit?usp=sharing",
+        url: "https://docs.google.com/document/d/https://drive.google.com/file/d/1_29o_wtck0PoFzBwj1cvwlS7YknuE9dj/view?usp=sharing/edit?usp=sharing",
         overveiw: "Overview"
         }
     ];
