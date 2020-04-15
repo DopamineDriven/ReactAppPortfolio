@@ -1,1 +1,1 @@
-`declare module 'react-mdl/lib/Layout';`
+// `declare module 'react-mdl/lib/Layout';`
