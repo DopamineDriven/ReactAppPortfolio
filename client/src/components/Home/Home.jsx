@@ -9,7 +9,7 @@ const Home = () => {
     <Container fluid>
       <Row className="row">
         <div
-          className="col-md-3 justify-content center shadow-lg p-3 mb-5 rounded"
+          className="col-md-5 justify-content center shadow-lg p-3 mb-5 pr-20 rounded"
           id="imdiv"
         >
           <ImageChangeOnMouseOver
