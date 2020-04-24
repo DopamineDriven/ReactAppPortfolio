@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="banner-text shadow-lg p-3 mt-5 rounded">
         <h3>Software Developer</h3>
         <hr />
-        <p>React | Express | MongoDB | MySQL | Docker | JWTs | Node | JavaScript | jQuery | Bootstrap | CSS | HTML</p>
+        <p>React | Redux | Express | MongoDB | MySQL | Docker | JWTs | Node | JavaScript | jQuery | Bootstrap | CSS | HTML</p>
         <div className="social-links">
             <a href="https://github.com/DopamineDriven" target="__blank">
                 <i className="fa fa-github-square fa-3x" aria-hidden="true"></i>
