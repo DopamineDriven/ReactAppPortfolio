@@ -1,8 +1,10 @@
 const express = require('express');
 require('dotenv').config();
 const app = express();
-const PORT = process.env.PORT || 3001;
-// const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
+const PORT = process.env.PORT || 3333;
+const multer = require("multer")
+const upload = multer();
 
 // handling data parsing
 app.use(express.urlencoded({ extended: true }));
@@ -12,6 +14,56 @@ app.use(express.json());
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'))
 };
+
+const auth = {
+    type: 'oauth2',
+    user: process.env.EMAIL_ADDRESS,
+    clientId: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
+    refreshToken: process.env.REFRESH_TOKEN
+}
+
+console.log(process.env.REFRESH_TOKEN);
+
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+app.post('/send', upload.none(), (req, res) => {
+    response = {
+        name: req.body.name,
+        email: req.body.email,
+        message: req.body.message
+    }
+
+    const mailOptions = {
+        from: req.body.name,
+        to: process.env.EMAIL_ADDRESS,
+        subject: `My site contact form ${req.body.name}`,
+        text: req.body.message,
+        html: "Message from: " + req.body.name + '<br></br> Email: ' + req.body.email + '<br></br> Message: ' + req.body.message 
+    };
+
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: auth
+    });
+
+    transporter.sendMail(mailOptions, (err, res) => {
+        if (err) {
+            return console.log(err)
+        } else {
+            console.log(JSON.stringify(res))
+        }
+    })
+});
+
+app.listen(PORT, () => {
+    console.log(`App listening on PORT http://localhost:${PORT}`)
+});
+
 
 // app.post('/api/form', (request, response) => {
 //     nodemailer.createTestAccount((error, account) => {
@@ -71,10 +123,6 @@ if (process.env.NODE_ENV === 'production') {
 //         .status(404)
 //         .send('Unable to locate resource')
 // });
-
-app.listen(PORT, () => {
-    console.log(`App listening on PORT http://localhost:${PORT}`)
-});
 
 // // importing nodemail routes
 // // module.exports = app => {
