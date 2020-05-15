@@ -18,3 +18,5 @@ https://developers.google.com/oauthplayground/?code=4/zgFLeGRJ5Fr4hGldfjQQE8cOBh
 https://developers.google.com/gmail/api/auth/web-server
 
 https://console.developers.google.com/apis/credentials/oauthclient/229460409760-r1srqq7bj62tbpbjpj71sqo62hdpmihk.apps.googleusercontent.com?folder=&organizationId=&project=portfolio-277005
+
+https://designdigitalsolutions.com/sending-mail-via-nodemailer-using-your-gmail-with-oauth2/

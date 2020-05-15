@@ -7,6 +7,9 @@ const multer = require("multer");
 const upload = multer();
 const cors = require("cors");
 const helmet = require("helmet");
+const { GoogleAuth } = require('google-auth-library');
+const config = require("./oauth_config.json");
+
 
 // handling data parsing
 app.use(
@@ -20,6 +23,8 @@ app.use(
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static("client/build"));
 }
+
+
 
 const auth = {
 	type: "oauth2",
