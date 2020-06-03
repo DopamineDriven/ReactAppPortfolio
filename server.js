@@ -28,12 +28,12 @@ if (process.env.NODE_ENV === "production") {
 
 const auth = {
 	type: "oauth2",
-	user: process.env.EMAIL_ADDRESS,
-	clientId: process.env.CLIENT_ID,
-	clientSecret: process.env.CLIENT_SECRET,
-    refreshToken: process.env.REFRESH_TOKEN,
-    auth_uri: "https://accounts.google.com/o/oauth2/auth",
-    redirect_uris: "https://developers.google.com/oauthplayground"
+	user: `${process.env.EMAIL_ADDRESS}`,
+	clientId: `${process.env.CLIENT_ID}`,
+	clientSecret: `${process.env.CLIENT_SECRET}`,
+    refreshToken: `${process.env.REFRESH_TOKEN}`,
+    auth_uri: "http://localhost:3333",
+    redirect_uris: "http://localhost:3333/send"
 };
 
 console.log(process.env.REFRESH_TOKEN);
@@ -76,7 +76,7 @@ app.post("/send", upload.none(), (req, res) => {
 
 	transporter.sendMail(mailOptions, (err, res) => {
 		if (err) {
-			return console.log(err);
+			throw new Error(err);
 		} else {
 			console.log(JSON.stringify(res));
 		}

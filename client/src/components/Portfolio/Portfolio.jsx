@@ -11,6 +11,7 @@ import portfolioPicNine from '../images/2.jpg';
 import portfolioPicTen from '../images/15.jpg';
 import portfolioPicEleven from '../images/16.jpg';
 import portfolioPicTwelve from '../images/17.jpg';
+import portfolioPicThirteen from "../images/18.jpg"
 import PortfolioItem from './PortfolioItem.jsx';
 import Container from '../Container/Container.jsx';
 import './Portfolio.css';
@@ -19,6 +20,16 @@ import './Portfolio.css';
 // import PortfolioCard from './PortfolioCard.jsx';
 
 const data = [
+    {
+        id: 18,
+        title: "Home-Sharing App",
+        bootcamp: false,
+        independent: true,
+        favorite: true,
+        image: portfolioPicThirteen,
+        url: 'https://gql-homesharing.herokuapp.com/',
+        overview: 'TypeScript, React, GraphQL, Apollo, OAuth2.0, Stripe, Cloudinary'
+    },
     {
         id: 17,
         title: "Consilience",

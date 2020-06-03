@@ -3,7 +3,7 @@
 ## Heroku Deployed
 https://react-portfolio-asross.herokuapp.com
 
-## Backwards Compatibility
+## Backward Compatibility
 - react-app-polyfill
 - supports IE9 and IE11
 
