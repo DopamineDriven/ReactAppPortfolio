@@ -41,7 +41,7 @@ const Navbar = () => {
                             About
                         </Link>
                     </li>
-                    &nbsp;|&nbsp;
+                    {/* &nbsp;|&nbsp;
                     <li className="nav-item">
                         <Link
                             to="/contact" 
@@ -52,7 +52,7 @@ const Navbar = () => {
                             }>
                             Contact
                         </Link>
-                    </li>
+                    </li> */}
                     &nbsp;|&nbsp;
                     <li className="nav-item">
                         <Link
