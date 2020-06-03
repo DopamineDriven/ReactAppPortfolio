@@ -1,14 +1,14 @@
 const express = require("express");
 require("dotenv").config();
 const app = express();
-const nodemailer = require("nodemailer");
+// const nodemailer = require("nodemailer");
 const PORT = process.env.PORT || 3333;
-const multer = require("multer");
-const upload = multer();
+// const multer = require("multer");
+// const upload = multer();
 const cors = require("cors");
 const helmet = require("helmet");
-const { GoogleAuth } = require('google-auth-library');
-const config = require("./oauth_config.json");
+// const { GoogleAuth } = require('google-auth-library');
+// const config = require("./oauth_config.json");
 
 
 // handling data parsing
@@ -26,62 +26,62 @@ if (process.env.NODE_ENV === "production") {
 
 
 
-const auth = {
-	type: "oauth2",
-	user: `${process.env.EMAIL_ADDRESS}`,
-	clientId: `${process.env.CLIENT_ID}`,
-	clientSecret: `${process.env.CLIENT_SECRET}`,
-    refreshToken: `${process.env.REFRESH_TOKEN}`,
-    auth_uri: "http://localhost:3333",
-    redirect_uris: "http://localhost:3333/send"
-};
+// const auth = {
+// 	type: "oauth2",
+// 	user: `${process.env.EMAIL_ADDRESS}`,
+// 	clientId: `${process.env.CLIENT_ID}`,
+// 	clientSecret: `${process.env.CLIENT_SECRET}`,
+//     refreshToken: `${process.env.REFRESH_TOKEN}`,
+//     auth_uri: "http://localhost:3333",
+//     redirect_uris: "http://localhost:3333/send"
+// };
 
-console.log(process.env.REFRESH_TOKEN);
-console.log(process.env.EMAIL_ADDRESS);
+// console.log(process.env.REFRESH_TOKEN);
+// console.log(process.env.EMAIL_ADDRESS);
 
-app.use((req, res, next) => {
-	res.header("Access-Control-Allow-Origin", "*");
-	res.header(
-		"Access-Control-Allow-Headers",
-		"Origin, X-Requested-With, Content-Type, Accept"
-	);
-	next();
-});
+// app.use((req, res, next) => {
+// 	res.header("Access-Control-Allow-Origin", "*");
+// 	res.header(
+// 		"Access-Control-Allow-Headers",
+// 		"Origin, X-Requested-With, Content-Type, Accept"
+// 	);
+// 	next();
+// });
 
-app.post("/send", upload.none(), (req, res) => {
-	response = {
-		name: req.body.name,
-		email: req.body.email,
-		message: req.body.message,
-	};
+// app.post("/send", upload.none(), (req, res) => {
+// 	response = {
+// 		name: req.body.name,
+// 		email: req.body.email,
+// 		message: req.body.message,
+// 	};
 
-	const mailOptions = {
-		from: req.body.name,
-		to: `${process.env.EMAIL_ADDRESS}`,
-		subject: `My site contact form ${req.body.name}`,
-		text: req.body.message,
-		html:
-			"Message from: " +
-			req.body.name +
-			"<br></br> Email: " +
-			req.body.email +
-			"<br></br> Message: " +
-			req.body.message,
-	};
+// 	const mailOptions = {
+// 		from: req.body.name,
+// 		to: `${process.env.EMAIL_ADDRESS}`,
+// 		subject: `My site contact form ${req.body.name}`,
+// 		text: req.body.message,
+// 		html:
+// 			"Message from: " +
+// 			req.body.name +
+// 			"<br></br> Email: " +
+// 			req.body.email +
+// 			"<br></br> Message: " +
+// 			req.body.message,
+// 	};
 
-	const transporter = nodemailer.createTransport({
-		service: 'gmail',
-		auth: auth,
-	});
+// 	const transporter = nodemailer.createTransport({
+// 		service: 'gmail',
+// 		auth: auth,
+// 	});
 
-	transporter.sendMail(mailOptions, (err, res) => {
-		if (err) {
-			throw new Error(err);
-		} else {
-			console.log(JSON.stringify(res));
-		}
-	});
-});
+// 	transporter.sendMail(mailOptions, (err, res) => {
+// 		if (err) {
+// 			throw new Error(err);
+// 		} else {
+// 			console.log(JSON.stringify(res));
+// 		}
+// 	});
+// });
 
 app.listen(PORT, () => {
 	console.log(`App listening on PORT http://localhost:${PORT}`);
